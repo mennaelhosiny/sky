@@ -37,7 +37,64 @@
 </head>
 
 <body class="index-page">
+<style>
+   body {
+      text-align: left;
+      direction: ltr;
+    }
 
+    body {
+  text-align: left;
+  direction: ltr;
+}
+
+/* RTL styles */
+body[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Example: Adjust margins and padding for RTL */
+body[dir="rtl"] .hero-content {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+body[dir="rtl"] .hero-buttons {
+  justify-content: flex-end;
+}
+
+    /* Style the Google Translate dropdown */
+    #google_translate_element {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    /* Style the dropdown button */
+    .goog-te-menu-frame {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the dropdown options */
+    .goog-te-menu-value {
+      color: #333;
+      font-size: 14px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+
+    /* Hide the Google Translate logo */
+    .goog-logo-link {
+      display: none !important;
+    }
+
+    /* Hide the "Powered by Google" text */
+    .goog-te-gadget {
+      color: transparent !important;
+    }
+</style>
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -59,111 +116,111 @@
       </nav>
 
       <a class="btn-getstarted" href="https://wa.me/97433371022">Contact Us</a>
-
+      <div id="google_translate_element"></div>
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+  <!-- Banner Section -->
+<!-- Banner Section with Image -->
+<section id="banner" class="banner">
+  <div class="container-fluid p-0">
+    <div class="banner-image mt-3">
+      <img src="assets/img/banner.png" alt="Special Offer Banner" class="img-fluid">
+    </div>
+    <style>
+      /* Banner Section with Image */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <div class="company-badge mb-4">
-                <i class="bi bi-gear-fill me-2"></i>
-                Working for your success
-              </div>
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* White text */
+}
 
-              <h1 class="mb-4">
-                Sky Eagle Trading <br>
-                Contracting is a trusted <br>
-                <span class="accent-text">contracting company in Qatar</span>
-              </h1>
+.banner-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
-              <p class="mb-4 mb-md-5">
-                known for our excellence in construction projects and building services. Established with a mission to deliver superior craftsmanship, we have become a leading provider of industrial construction, fine finishing, and home maintenance services.
-              </p>
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
 
-              <div class="hero-buttons">
-                <a href="https://wa.me/97433371022" class="btn btn-primary me-0 me-sm-2 mx-1">Contact Us </a>
-                
-              </div>
-            </div>
+.banner-content .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+    </style>
+  </div>
+</section><!-- /Banner Section -->
+
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="company-badge mb-4">
+            <i class="bi bi-gear-fill me-2"></i>
+            Working for your success
           </div>
 
-          <div class="col-lg-6">
-            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-              <img src="assets/img/Artboard 1.png" alt="Hero Image" class="img-fluid">
+          <h1 class="mb-4">
+            Sky Eagle Trading <br>
+            Contracting is a trusted <br>
+            <span class="accent-text">contracting company in Qatar</span>
+          </h1>
 
-              <div class="customers-badge">
-                <div class="customer-avatars">
-                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
-                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
-                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
-                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
-                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
-                  <span class="avatar more">12+</span>
-                </div>
-                <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-              </div>
-            </div>
+          <p class="mb-4 mb-md-5">
+            known for our excellence in construction projects and building services. Established with a mission to deliver superior craftsmanship, we have become a leading provider of industrial construction, fine finishing, and home maintenance services.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="https://wa.me/97433371022" class="btn btn-primary me-0 me-sm-2 mx-1">Contact Us </a>
           </div>
         </div>
-
-        <!-- <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-trophy"></i>
-              </div>
-              <div class="stat-content">
-                <h4>3x Won Awards</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6.5k Faucibus</h4>
-                <p class="mb-0">Nullam quis ante</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <div class="stat-content">
-                <h4>80k Mauris</h4>
-                <p class="mb-0">Etiam sit amet orci</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-award"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6x Phasellus</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
       </div>
 
-    </section><!-- /Hero Section -->
+      <div class="col-lg-6">
+        <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/Artboard 1.png" alt="Hero Image" class="img-fluid">
+
+          <div class="customers-badge">
+            <div class="customer-avatars">
+              <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
+              <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
+              <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
+              <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
+              <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
+              <span class="avatar more">12+</span>
+            </div>
+            <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -1126,7 +1183,47 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language of your website
+          includedLanguages: 'en,ar', // Only English and Arabic
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Dropdown layout
+          autoDisplay: false, // Prevent automatic language detection
+        },
+        'google_translate_element' // ID of the div where the dropdown will appear
+      );
+  
+      // Function to handle language change
+      function handleLanguageChange() {
+        const currentLang = document.querySelector('.goog-te-menu-value span').textContent;
+        if (currentLang === 'Arabic') {
+          document.documentElement.dir = 'rtl'; // Switch to RTL for Arabic
+        } else {
+          document.documentElement.dir = 'ltr'; // Switch back to LTR for English
+        }
+      }
+  
+      // Use MutationObserver to detect changes in the Google Translate dropdown
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'childList') {
+            handleLanguageChange();
+          }
+        });
+      });
+  
+      // Observe the Google Translate dropdown for changes
+      const translateElement = document.querySelector('.goog-te-menu-value');
+      if (translateElement) {
+        observer.observe(translateElement, {
+          childList: true, // Observe changes to the child elements
+        });
+      }
+    }
+  </script>
 </body>
 
 </html>
